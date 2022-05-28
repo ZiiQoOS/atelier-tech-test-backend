@@ -10,6 +10,6 @@ exports.getPlayerById = (req, res, next) => {
     const player = PlayersService.getPlayerById(id);
 
     player ? res.status(200).json(player) : res.status(404).json({
-        message: 'Player not found'
+        message: 'Player not found, please select a valid id.'
     })
 };
