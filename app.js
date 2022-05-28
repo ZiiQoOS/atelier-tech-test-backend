@@ -1,17 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const PlayersRoutes = require("./src/players/routes");
-const app = express();
-const PORT = process.env.PORT || 3000;
 const cors = require('cors');
 
+const PORT = process.env.PORT || 3000;
+const PlayersRoutes = require("./src/players/routes");
+const config = require('./config/config');
 
-// Set up CORS
-app.use(cors({
-  origin: true,
-  credentials: true,
-  methods: 'POST,GET,PUT,OPTIONS,DELETE'
-}));
+const app = express();
+
+// Configure CORS
+app.use(cors(config.cors));
 
 app.use(bodyParser.urlencoded({
   extended: true
