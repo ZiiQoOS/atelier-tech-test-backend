@@ -1,15 +1,16 @@
-const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require('cors');
+const express = require("express");
+
+const config = require('./config/config');
+const PlayersRoutes = require("./src/players/routes");
 
 const PORT = process.env.PORT || 3000;
-const PlayersRoutes = require("./src/players/routes");
-const config = require('./config/config');
 
 const app = express();
-
 // Configure CORS
 app.use(cors(config.cors));
+
 
 app.use(bodyParser.urlencoded({
   extended: true
@@ -25,6 +26,6 @@ app.use((err, req, res, next) => {
   })
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, (req) => {
   console.log(`server is listening on http://localhost:${PORT}`);
 });

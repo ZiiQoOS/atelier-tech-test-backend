@@ -1,11 +1,16 @@
 const express = require("express");
 const router = express.Router();
 const PlayersControllers = require("../controllers/PlayersController");
+const StatsController = require("../controllers/StatsController");
 
-router.get("/", PlayersControllers.getPlayers);
-router.get("/:id", PlayersControllers.getPlayerById);
+/* Players routes */
+router.get("/players", PlayersControllers.getPlayers);
+router.get("/players/:id", PlayersControllers.getPlayerById);
 
-// router.get("/statistics", PlayersControllers.fetchStatistics);
+/* Statistics routes */
+router.get("/stats", StatsController.getStats);
+
+
 
 
 module.exports = router;

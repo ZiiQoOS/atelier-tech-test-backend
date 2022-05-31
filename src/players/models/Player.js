@@ -13,7 +13,7 @@ class Player {
     this.country = new Country(player.country);
     this.age = player.data.age;
     this.height = player.data.height;
-    this.weight = player.data.weight;
+    this.weight = player.data.weight / 1000;
   }
 
   getBirthDate(age) {
