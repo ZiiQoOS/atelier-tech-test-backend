@@ -8,7 +8,7 @@ router.get("/players", PlayersControllers.getPlayers);
 router.get("/players/:id", PlayersControllers.getPlayerById);
 
 /* Statistics routes */
-router.get("/stats", StatsController.getStats);
+router.get("/statistics", StatsController.getStats);
 
 
 

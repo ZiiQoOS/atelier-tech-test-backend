@@ -10,15 +10,20 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 // Configure CORS
 app.use(cors(config.cors));
-
-
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
 
-app.use("/", PlayersRoutes);
 
+
+app.use("/", PlayersRoutes);
+// Home endpoint
+app.get("/", (req, res, next) => {
+  res.status(200).json({
+    message : 'Hello there!'
+  });
+});
 
 
 
