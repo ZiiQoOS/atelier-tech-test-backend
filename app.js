@@ -21,8 +21,6 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 const definition = swaggerDocument.swaggerDefinition;
 
-console.log("swaggerDefinition",definition.host);
-
 const options = {
   definition,     
   apis:["src/players/routes/*.js"]
