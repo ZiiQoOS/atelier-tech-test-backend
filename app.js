@@ -35,7 +35,7 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 // Home endpoint
 app.get("/", async (req, res, next) => {
   res.status(200).json({
-    message: 'Hello there, this the player manager api!'
+    message: 'Hello there, this the players manager API!'
   });
 });
 // Players endpoints
