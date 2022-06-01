@@ -1,4 +1,3 @@
-[![Build Status][build-shield]]()
 # Player Manager API
 
 > Player Manager API
