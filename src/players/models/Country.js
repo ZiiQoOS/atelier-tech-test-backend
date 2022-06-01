@@ -3,7 +3,7 @@ class Country {
   constructor(country) {
     this.code = country.code;
     this.name = this.getCountryName(country.code);
-    this.picture = country.picture;
+    this.flag = country.picture;
   }
 
   getCountryName(code) {

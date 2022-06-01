@@ -12,13 +12,13 @@ class StatsService {
   static getStats() {
     const players = playersMockData.players;
     return {
-      topRatioCountry: this.gettopRatioCountry(players),
+      topRatioCountry: this.getTopRatioCountry(players),
       meanPlayersBMI: this.meanPlayersBMI(players),
       medianHeightPlayers: this.medianHeightPlayers(players)
     }
   }
 
-  static gettopRatioCountry(players) {
+  static getTopRatioCountry(players) {
     const topRatioCountry = players
       .map(player => { // get the number of 1 and 0 (win and loss) for each country
         return {
