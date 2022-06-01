@@ -16,7 +16,8 @@
       "description": "Players manager"
     }],
     "schemes": [
-      "http"
+      "http",
+      "https"
     ],
     "paths": {
       "/players": {
