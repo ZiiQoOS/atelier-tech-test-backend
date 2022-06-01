@@ -9,7 +9,7 @@
         "email": "contact@playerapi.com"
       }
     },
-    "host": "https://atelier-tech-test-backend.herokuapp.com",
+    "host": "atelier-tech-test-backend.herokuapp.com",
     "basePath": "/",
     "tags": [{
       "name": "Players",
