@@ -1,7 +1,6 @@
-[![Build Status][build-shield]]()
-# Player Manager API
+# Players Manager API
 
-> Player Manager API
+> Players Manager API
 
 ## Requirements
 
@@ -18,7 +17,7 @@ To run the project use the command
 
     $ npm run start
 
-To run test, use the command
+To run unit tests, use the command
 
     $ npm test
 
