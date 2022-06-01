@@ -33,3 +33,4 @@ Some of the major technologies used to bring this projet to life:
 * [Nodejs](https://nodejs.org/)
 * [Express](https://expressjs.com/)
 * [Swagger](https://swagger.io/)
+
