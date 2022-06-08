@@ -36,7 +36,7 @@ class StatsService {
       })
       .reduce((accumulator, current) => { // accumulate the ratios for players with the same country
         const code = current.code;
-        const found = accumulator.find((elem) => elem.country == code);
+        const found = accumulator.find((elem) => elem.code === code);
         if (found) found.ratio += current.ratio;
         else accumulator.push(current);
         return accumulator;
